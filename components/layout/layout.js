@@ -7,9 +7,9 @@ export default function Layout(props) {
             <main className="container flex flex-1 justify-center mx-auto px-5 max-w-screen-lg">
                 {props.children}
             </main>
-            <footer className="flex items-center justify-center w-full h-20 text-sm border-t">
+            <footer className="container flex items-center justify-end mx-auto w-full h-52 text-sm font-light">
                 ©︎ UD All rights reserved.
             </footer>
         </div>
-    )
+    );
 }

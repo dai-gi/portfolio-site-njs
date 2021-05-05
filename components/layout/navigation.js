@@ -2,18 +2,18 @@ import Link from "next/link";
 
 export default function Navigation() {
     return (
-        <header className="container flex flex-row items-center mx-auto px-5 py-14 max-w-screen-lg">
+        <header className="container flex flex-row items-center mx-auto py-14 max-w-screen-lg">
             <Link href="/">
-                <a className="text-4xl font-bold text-red-300">UD</a>
+                <a className="text-4xl">UD</a>
             </Link>
             <nav className="ml-auto">
-                <Link className="/">
-                    <a className="mr-5">Home</a>
+                <Link href="/">
+                    <a className="mr-20 font-light">Home</a>
                 </Link>
-                <Link className="/about">
-                    <a className="mr-5">About</a>
+                <Link href="/about">
+                    <a className="font-light">About</a>
                 </Link>
             </nav>
         </header>
-    )
+    );
 }
