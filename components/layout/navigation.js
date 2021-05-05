@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navigation() {
     return (
-        <header className="container flex flex-row items-center mx-auto py-14 max-w-screen-lg">
+        <header className="container flex flex-row items-center mx-auto py-10 max-w-screen-lg">
             <Link href="/">
                 <a className="text-4xl">UD</a>
             </Link>
