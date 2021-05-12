@@ -1,16 +1,23 @@
 import Head from 'next/head';
 import Link from "next/link";
 
-import Profile from "../components/profile/profile";
-import { getAllProfileData } from "../lib/profile";
-
-export default function Home({ profiles }) {
+export default function Home() {
   return (
     <div>
       <Head>
         <title>UD Portfolio</title>
       </Head>
-      {profiles && profiles.map((profile) => <Profile key={profile.id} profile={profile} />)}
+      <section>
+        <div className="h-96 items-center grid grid-cols-2 bg-gray-200">
+          <div>
+              <h1 className="text-5xl flex justify-end">DAISUKE UEDA</h1>
+              <p className="text-xl flex justify-end mr-36 mt-2">駆け出しエンジニア</p>
+          </div>
+          <div className="text-9xl flex justify-start ml-36">
+              <i className="fas fa-user-circle text-gray-400"></i>
+          </div>
+        </div>
+      </section>
       <main className="mx-auto px-5 max-w-screen-lg flex-grow">
         <section>
           <div className="h-28 flex items-center justify-center mt-24 mb-10">
@@ -92,13 +99,4 @@ export default function Home({ profiles }) {
       </main>
     </div>
   );
-}
-
-export async function getStaticProps() {
-  const profiles = await getAllProfileData();
-
-  return {
-      props: { profiles },
-      revalidate: 3,
-  }
 }

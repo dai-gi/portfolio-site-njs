@@ -10,7 +10,7 @@ export default function Navigation() {
                 <Link href="/">
                     <a className="mr-20 font-light">Home</a>
                 </Link>
-                <Link href="/about">
+                <Link href="../profile/about">
                     <a className="font-light">About</a>
                 </Link>
             </nav>
