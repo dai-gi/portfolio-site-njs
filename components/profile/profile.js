@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Profile({ profile }) {
     return (
         <section>
-            <div className="mx-auto px-32 container flex items-center justify-end w-full h-7 mb-3">
+            <div className="mx-auto px-5 flex items-center justify-end max-w-screen-lg h-7 mb-3">
                 <Link href={profile.twitter}>
                     <a className="fab fa-twitter text-xl text-gray-500 mr-7"></a>
                 </Link>
