@@ -1,4 +1,5 @@
 import Navigation from "./navigation";
+import Profile from "../profile/profile";
 import Link from "next/link";
 
 export default function Layout( props ) {
@@ -6,16 +7,7 @@ export default function Layout( props ) {
         <div className="flex flex-col min-h-screen">
             <Navigation />
             <body className="flex flex-col min-h-screen">
-                <section>
-                    <div className="mx-auto px-5 flex items-center justify-end max-w-screen-lg h-7 mb-3">
-                        <Link href="https://twitter.com/dai_twii">
-                            <a className="fab fa-twitter text-xl text-gray-500 mr-7"></a>
-                        </Link>
-                        <Link href="/">
-                            <a className="fab fa-facebook-f text-xl text-gray-500"></a>
-                        </Link>
-                    </div>
-                </section>
+                <Profile />
                 {props.children}
                 <footer className="text-sm font-light">
                     <div className="grid grid-cols-12 mx-auto max-w-screen-lg px-5 h-36">

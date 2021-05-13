@@ -7,17 +7,6 @@ export default function Home() {
       <Head>
         <title>UD Portfolio</title>
       </Head>
-      <section>
-        <div className="h-96 items-center grid grid-cols-2 bg-gray-200">
-          <div>
-              <h1 className="text-5xl flex justify-end">DAISUKE UEDA</h1>
-              <p className="text-xl flex justify-end mr-36 mt-2">駆け出しエンジニア</p>
-          </div>
-          <div className="text-9xl flex justify-start ml-36">
-              <i className="fas fa-user-circle text-gray-400"></i>
-          </div>
-        </div>
-      </section>
       <main className="mx-auto px-5 max-w-screen-lg flex-grow">
         <section>
           <div className="h-28 flex items-center justify-center mt-24 mb-10">
