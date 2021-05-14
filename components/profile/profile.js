@@ -1,25 +1,23 @@
-import Link from "next/link";
+import fetch from "node-fetch";
 
-export default function Profile({ profile }) {
-    return (
-        <section>
-            <div className="mx-auto px-5 flex items-center justify-end max-w-screen-lg h-7 mb-3">
-                <Link href="/">
-                    <a className="fab fa-twitter text-xl text-gray-500 mr-7"></a>
-                </Link>
-                <Link href="/">
-                    <a className="fab fa-facebook-f text-xl text-gray-500"></a>
-                </Link>
-            </div>
-            <div className="h-96 items-center grid grid-cols-2 bg-gray-200">
-                <div>
-                    <h1 className="text-5xl flex justify-end">{profile.title}</h1>
-                    <p className="text-xl flex justify-end mr-36 mt-2">駆け出しエンジニア</p>
-                </div>
-                <div className="text-9xl flex justify-start ml-36">
-                    <i className="fas fa-user-circle text-gray-400"></i>
-                </div>
-            </div>
-            </section>
-    );
+const SERVERURL = "http://127.0.0.1:8000/";
+
+// プロフィールデータ一覧を取得
+export async function getAllProfileData() {
+    const res = await fetch(new URL(`${SERVERURL}api/profile/`));
+    const profiles = await res.json();
+    return profiles;
+}
+
+// プロフィールデータのIDを取得
+export async function getAllProfileIds() {
+    const res = await fetch(new URL(`${SERVERURL}api/profile/`));
+    const profiles = await res.json();
+    return profile.map((profile) => {
+        return {
+            params: {
+                id: String(profile.id),
+            },
+        };
+    });
 }
