@@ -1,14 +1,18 @@
 import Navigation from "./navigation";
-import Profile from "../profile/profile";
+import Sns from "./sns";
 import Link from "next/link";
 
-export default function Layout( props ) {
+export default function Layout(props) {
     return (
         <div className="flex flex-col min-h-screen">
             <Navigation />
             <body className="flex flex-col min-h-screen">
-                <Profile />
-                {props.children}
+                <section>
+                    <Sns />
+                </section>
+                <main className="mx-auto px-5 max-w-screen-lg flex-grow">
+                    {props.children}
+                </main>
                 <footer className="text-sm font-light">
                     <div className="grid grid-cols-12 mx-auto max-w-screen-lg px-5 h-36">
                         <nav className="col-span-8 flex items-center">
