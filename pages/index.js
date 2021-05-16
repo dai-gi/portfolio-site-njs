@@ -1,5 +1,4 @@
 import Head from 'next/head';
-
 import { getAllProfilesData } from "../lib/profiles"
 
 export default function Home({ profiles }) {
@@ -43,7 +42,6 @@ export default function Home({ profiles }) {
     </div>
   );
 }
-
 
 export async function getStaticProps() {
   const profiles = await getAllProfilesData();
