@@ -10,9 +10,7 @@ export default function Layout(props) {
                 <section>
                     <Sns />
                 </section>
-                <main className="mx-auto px-5 max-w-screen-lg flex-grow">
-                    {props.children}
-                </main>
+                {props.children}
                 <footer className="text-sm font-light">
                     <div className="grid grid-cols-12 mx-auto max-w-screen-lg px-5 h-36">
                         <nav className="col-span-8 flex items-center">
