@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import { getAllProfilesData } from "../lib/profiles"
 
-import Production from "../components/production/production"
+import Production from "../components/production/productions"
 import { getAllProductionsData } from "../lib/productions"
 
 
