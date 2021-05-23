@@ -2,7 +2,7 @@ import { getAllProfilesData } from "../lib/profiles"
 
 export default function About({ profiles }) {
     return (
-        <div className="flex-grow">
+        <div className="flex-grow text-gray-800">
             <div className="h-28 flex items-center justify-center m-10">
                 <h1 className="text-5xl font-thin">About</h1>
             </div>
@@ -26,7 +26,7 @@ export default function About({ profiles }) {
                     <p>WEB開発エンジニアを目指し、日々、WEB制作やアプリケーション開発をしています。</p>
                 </div>
             </div>
-            <div className="flex items-center justify-center mt-20">
+            <div className="flex items-center justify-center mt-24 mb-10">
                 <a className="far fa-arrow-alt-circle-up text-gray-300 text-3xl" href="/about"></a>
             </div>
         </div>

@@ -11,7 +11,7 @@ export default function Layout(props) {
                     <Sns />
                 </section>
                 {props.children}
-                <footer className="text-sm font-light">
+                <footer className="text-sm font-light text-gray-800">
                     <div className="grid grid-cols-12 mx-auto max-w-screen-lg px-5 h-36">
                         <nav className="col-span-8 flex items-center">
                             <Link href="/">
