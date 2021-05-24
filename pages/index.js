@@ -12,17 +12,13 @@ export default function Home({ profiles, productions }) {
       <Head>
         <title>DU Portfolio</title>
       </Head>
-      <div className="grid grid-cols-2 h-80 my-28 ">
-        <div className="flex items-center justify-end mr-12 pb-15">
+      <div className="grid grid-cols-2 relative h-20 w-4/5 mt-28 mb-96 bg-gray-200 -bottom-36 -right-96">
+        <div className="flex items-center justify-end mr-12 pb-15 absolute -top-8 left-10">
           <div>
-            <h1 className="text-6xl font-light text-gray-800">{profiles.map((profile) => profile.title)}</h1>
+            <h1 className="text-9xl font-thin text-gray-700 title">{profiles.map((profile) => profile.title)}</h1>
           </div>
         </div>
-        <div className="bg-gray-400 w-96 h-72 relative inset-8 ml-12">
-          <div className="flex items-center justify-center bg-gray-200 w-96 h-72 absolute -inset-8">
-            <i className="fas fa-images text-9xl text-gray-400 text-opacity-25"></i>
-          </div>
-        </div>
+
       </div>
       <main className="mx-auto px-5 max-w-screen-lg my-32">
         <div className="h-28 flex items-center justify-center mt-48 mb-5">
