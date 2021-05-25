@@ -26,7 +26,7 @@ export default function Home({ profiles, productions }) {
       </div>
       <div className="mx-auto max-w-screen-lg my-20 grid grid-cols-12 bg-gray-100 py-20 ">
         <div className="flex items-center justify-center col-span-12">
-          <h1 className="text-4xl font-thin text-gray-800 border-b border-gray-700 w-12 flex justify-center pb-3" id="about">About</h1>
+          <h1 className="text-4xl font-thin text-gray-800 border-b border-gray-700 w-16 flex justify-center pb-3 mb-5" id="about">About</h1>
         </div>
         <div className="col-span-6 flex justify-end items-center mt-10">
           <img className="h-36 w-36 object-cover mr-14" src={profiles.map((profile) => profile.subimage)}/>
