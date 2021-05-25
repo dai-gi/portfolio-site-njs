@@ -4,8 +4,11 @@ export default function Navigation() {
     return (
         <header className="container flex flex-row items-center mx-auto py-10 max-w-screen-lg text-gray-800">
             <Link href="/">
-                <div className="border-black">
-                    <a className="text-4xl logo"><span className="relative">D</span><span className="absolute left-96 top-12 ml-3">U.</span></a>
+                <div className="border-black border h-12 w-9 relative">
+                    <a className="text-4xl logo">
+                        <span>D</span>
+                        <span className="absolute left-2 top-2">U.</span>
+                    </a>
                 </div>
             </Link>
             <nav className="ml-auto">
