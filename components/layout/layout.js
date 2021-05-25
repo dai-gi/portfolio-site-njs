@@ -1,5 +1,4 @@
 import Navigation from "./navigation";
-import Sns from "./sns";
 import Link from "next/link";
 
 export default function Layout(props) {
@@ -7,9 +6,6 @@ export default function Layout(props) {
         <div className="flex flex-col min-h-screen">
             <Navigation />
             <body className="flex flex-col min-h-screen">
-                <section>
-                    <Sns />
-                </section>
                 {props.children}
                 <footer className="text-sm font-light text-gray-800">
                     <div className="grid grid-cols-12 mx-auto max-w-screen-lg px-5 h-36">

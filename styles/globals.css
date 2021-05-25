@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bitter:wght@300&display=swap');
+
+.logo {
+    font-family: 'Bitter', serif;
+}
 
 .title {
-    font-family: 'Dawning of a New Day', cursive;
+    font-family: 'Allura', cursive;
 }
