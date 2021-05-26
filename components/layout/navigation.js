@@ -13,10 +13,16 @@ export default function Navigation() {
             </Link>
             <nav className="ml-auto">
                 <Link href="/">
-                    <a className="mr-20 font-light">Home</a>
+                    <a className="mr-10 font-light">Home</a>
                 </Link>
                 <Link href="#about">
-                    <a className="font-light">About</a>
+                    <a className="mr-10 font-light">About</a>
+                </Link>
+                <Link href="#work">
+                    <a className="mr-10 font-light">Work</a>
+                </Link>
+                <Link href="/">
+                    <a className="font-light">Contact</a>
                 </Link>
             </nav>
         </header>
