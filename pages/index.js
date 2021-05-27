@@ -52,7 +52,7 @@ export default function Home({ profiles, productions }) {
         {productions && productions.map((production) => <Production key={production.id} production={production} />)}
       </main>
       <div className="flex items-center justify-center mt-24 mb-10">
-        <a className="text-gray-700 font-light text-3xl" href="/">↑</a>
+        <a className="text-gray-700 font-light text-3xl animate-bounce" href="/">↑</a>
       </div>
     </div>
   );
