@@ -12,27 +12,31 @@ export default function Home({ profiles, productions }) {
       <Head>
         <title>DU Portfolio</title>
       </Head>
-      <div className="grid grid-cols-12 py-48">
-        <div className="flex items-center justify-end col-span-7">
+      <div className="py-48">
+        <div className="flex items-center justify-center">
           <div>
-            <h1 className="text-8xl font-thin text-gray-600 title border-r-2 border-gray-700 pr-12">{profiles.map((profile) => profile.title)}</h1>
-            <p className="text-gray-400">{profiles.map((profile) => profile.subtitle)}</p>
+            <h1 className="text-9xl font-thin text-gray-600 title">{profiles.map((profile) => profile.title)}</h1>
+            <p className="text-gray-400 text-xl">{profiles.map((profile) => profile.subtitle)}
+              <a className="fab fa-twitter text-2xl ml-9 mr-4" href={profiles.map((profile) => profile.twitter)}></a>
+              <a className="fab fa-github text-2xl" href={profiles.map((profile) => profile.twitter)}></a>
+            </p>
           </div>
         </div>
-        <div className="flex items-center ml-12">
-          <a className="fab fa-twitter text-3xl" href={profiles.map((profile) => profile.twitter)}></a>
-          <a className="fab fa-github text-3xl text-gray-600 ml-7" href={profiles.map((profile) => profile.twitter)}></a>
+        <div className="flex items-end pb-2">
+
         </div>
       </div>
       <div className="mx-auto max-w-screen-lg my-20 grid grid-cols-12 bg-gray-100 py-20 ">
         <div className="flex items-center justify-center col-span-12">
-          <h1 className="text-5xl font-thin text-gray-800 border-b border-gray-700 w-16 flex justify-center pb-3 mb-7" id="about">About</h1>
+          <h1 className="text-5xl font-thin text-gray-800 border-b border-gray-700 w-16 flex justify-center pb-3 mb-12" id="about">About</h1>
         </div>
-        <div className="col-span-6 flex justify-end items-center mt-10">
-          <img className="h-56 w-56 object-cover mr-14" src={profiles.map((profile) => profile.subimage)}/>
+        <div className="col-span-6 flex justify-end items-center mt-12">
+          <div className="bg-gray-300 relative h-56 w-56 right-24 top-5">
+            <img className="h-56 w-56 object-cover mr-14 absolute left-10 -top-10" src={profiles.map((profile) => profile.subimage)}/>
+          </div>
         </div>
-        <div className="col-span-6 mt-10 text-gray-700">
-          <p className="mb-1">{profiles.map((profile) => profile.name)}</p>
+        <div className="col-span-6 mt-6 text-gray-700 ml-20">
+          <p className="mt-6 mb-3">{profiles.map((profile) => profile.name)}</p>
           <p>Twitter:
             <a className="mb-1" href={profiles.map((profile) => profile.twitter)}>
               <span className="ml-16">dai_twii</span>
