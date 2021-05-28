@@ -8,7 +8,7 @@ export default function Layout(props) {
             <body className="flex flex-col min-h-screen">
                 {props.children}
                 <footer className="text-sm font-light text-gray-800">
-                    <div className="grid grid-cols-12 mx-auto max-w-screen-lg px-5 h-36">
+                    <div className="grid grid-cols-12 mx-auto max-w-screen-lg px-5 h-36 md:px-10">
                         <nav className="col-span-8 flex items-center">
                         <Link href="/">
                             <a className="mr-10 font-light">Home</a>
