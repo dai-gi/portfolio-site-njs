@@ -5,12 +5,12 @@ export default function Navigation() {
         <header className="container mx-auto py-10 px-8 max-w-screen-lg text-gray-800">
             <div className="flex items-center justify-between">
                 <Link href="/">
-                    <div className="border-black border-2 h-12 w-12 relative">
-                        <a className="text-4xl logo">
+                    <a className="border-black border-2 h-12 w-12 relative">
+                        <div className="text-4xl logo">
                             <span className="absolute left-1">D</span>
                             <span className="absolute left-3 top-2">U<span className="ml-3">.</span></span>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </Link>
                 <div className="sm:hidden">
                     <div>
@@ -56,29 +56,5 @@ export default function Navigation() {
                 </div>
             </div>
         </header>
-        // <header>
-        //     <div class="mx-auto px-2 sm:px-6 lg:px-8">
-        //         <div class="relative flex items-end justify-between h-16">
-                    
-        //             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-        //                 <div class="flex-shrink-0 flex items-center">
-        //                     <img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow"/>
-        //                     <img class="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow"/>
-        //                 </div>
-        //                 <div class="hidden sm:block sm:ml-6">
-        //                     <div class="flex space-x-4">
-        //                         <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Dashboard</a>
-
-        //                         <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
-
-        //                         <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-
-        //                         <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
-        //                     </div>
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </header>
     );
 }
