@@ -12,7 +12,7 @@ export default function Home({ profiles, productions }) {
       <Head>
         <title>DU Portfolio</title>
       </Head>
-      <div className="py-48">
+      <div className="py-32 md:py-48">
         <div className="flex items-center justify-center">
           <div>
             <h1 className="text-6xl md:text-9xl text-gray-600 title">{profiles.map((profile) => profile.title)}</h1>
