@@ -15,10 +15,10 @@ export default function Home({ profiles, productions }) {
       <div className="py-48">
         <div className="flex items-center justify-center">
           <div>
-            <h1 className="text-9xl font-thin text-gray-600 title">{profiles.map((profile) => profile.title)}</h1>
-            <p className="text-gray-400 text-xl">{profiles.map((profile) => profile.subtitle)}
-              <a className="fab fa-twitter text-2xl ml-9 mr-4" href={profiles.map((profile) => profile.twitter)}></a>
-              <a className="fab fa-github text-2xl" href={profiles.map((profile) => profile.twitter)}></a>
+            <h1 className="text-6xl md:text-9xl text-gray-600 title">{profiles.map((profile) => profile.title)}</h1>
+            <p className="text-gray-400 md:text-xl">{profiles.map((profile) => profile.subtitle)}
+              <a className="fab fa-twitter md:text-2xl ml-7 mr-3" href={profiles.map((profile) => profile.twitter)}></a>
+              <a className="fab fa-github md:text-2xl" href={profiles.map((profile) => profile.twitter)}></a>
             </p>
           </div>
         </div>
