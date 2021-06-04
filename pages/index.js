@@ -26,7 +26,7 @@ export default function Home({ profiles, productions }) {
 
         </div>
       </div>
-      <div className="mx-auto max-w-screen-lg my-20 grid grid-cols-12 bg-gray-100 py-20 ">
+      <div className="mx-auto max-w-screen-lg my-10 md:my-20 grid grid-cols-12 bg-gray-100 py-20 ">
         <div className="flex items-center justify-center col-span-12">
           <h1 className="text-5xl font-thin text-gray-800 border-b border-gray-700 w-16 flex justify-center pb-3 mb-12" id="about">About</h1>
         </div>
