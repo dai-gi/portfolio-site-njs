@@ -49,7 +49,7 @@ export default function Home({ profiles, productions }) {
       </div>
       <main className="mx-auto px-5 max-w-screen-lg my-32 grid grid-cols-12">
         <div className="flex items-center justify-center col-span-12">
-          <h1 className="text-5xl font-thin text-gray-800 border-b border-gray-700 w-16 flex justify-center pb-3 mb-12" id="work">Work</h1>
+          <h1 className="text-4xl font-thin text-gray-800 border-b border-gray-700 w-16 flex justify-center pb-3 mb-12 md:text-5xl" id="work">Work</h1>
         </div>
         {productions && productions.map((production) => <Production key={production.id} production={production} />)}
       </main>
