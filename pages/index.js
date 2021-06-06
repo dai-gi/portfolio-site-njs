@@ -26,27 +26,29 @@ export default function Home({ profiles, productions }) {
 
         </div>
       </div>
-      <div className="mx-auto max-w-screen-lg my-10 md:my-20 grid grid-cols-12 bg-gray-100 py-20 ">
+      <div className="mx-auto max-w-screen-lg my-10 md:my-20 grid grid-cols-12 bg-gray-100 py-20">
         <div className="flex items-center justify-center col-span-12">
-          <h1 className="text-5xl font-thin text-gray-800 border-b border-gray-700 w-16 flex justify-center pb-3 mb-12" id="about">About</h1>
+          <h1 className="text-4xl font-thin text-gray-800 border-b border-gray-700 w-16 flex justify-center pb-3 mb-12 md:text-5xl" id="about">About</h1>
         </div>
-        <div className="col-span-6 flex justify-end items-center mt-12">
-          <div className="bg-gray-300 relative h-56 w-56 right-24 top-5">
-            <img className="h-56 w-56 object-cover mr-14 absolute left-10 -top-10" src={profiles.map((profile) => profile.subimage)}/>
+        <div className="col-span-12 md:col-span-6 flex justify-center md:justify-end items-center md:mt-12">
+          <div className="md:bg-gray-300 md:h-56 md:w-56 md:relative md:right-24 md:top-5">
+            <img className="object-cover h-48 w-48 md:h-56 md:w-56 md:mr-14 md:absolute md:left-10 md:-top-10" src={profiles.map((profile) => profile.subimage)}/>
           </div>
         </div>
-        <div className="col-span-6 mt-6 text-gray-700 ml-20">
-          <p className="mt-6 mb-3">{profiles.map((profile) => profile.name)}</p>
-          <p>Twitter:
-            <a className="mb-1" href={profiles.map((profile) => profile.twitter)}>
-              <span className="ml-16">dai_twii</span>
-            </a>
-          </p>
-          <p>Github:
-            <a className="mb-1" href={profiles.map((profile) => profile.twitter)}>
-              <span className="ml-16">dai_gi</span>
-            </a>
-          </p>
+        <div className="col-span-12 mt-10 flex justify-center text-gray-700 md:justify-start md:col-span-6 md:mt-6 md:ml-20">
+          <div>
+            <p className="mt-6 mb-3">{profiles.map((profile) => profile.name)}</p>
+            <p>Twitter:
+              <a className="mb-1" href={profiles.map((profile) => profile.twitter)}>
+                <span className="ml-16">dai_twii</span>
+              </a>
+            </p>
+            <p>Github:
+              <a className="mb-1" href={profiles.map((profile) => profile.twitter)}>
+                <span className="ml-16">dai_gi</span>
+              </a>
+            </p>
+          </div>
         </div>
       </div>
       <main className="mx-auto px-5 max-w-screen-lg my-32 grid grid-cols-12">
