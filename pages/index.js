@@ -1,10 +1,9 @@
 import Head from 'next/head';
 
-import { getAllProfilesData } from "../lib/profiles"
+import { getAllProfilesData } from "../lib/profiles";
 
-import Production from "../components/production/productions"
-import { getAllProductionsData } from "../lib/productions"
-
+import Production from "../components/production/productions";
+import { getAllProductionsData } from "../lib/productions";
 
 export default function Home({ profiles, productions }) {
   return (
@@ -21,9 +20,6 @@ export default function Home({ profiles, productions }) {
               <a className="fab fa-github md:text-2xl" href={profiles.map((profile) => profile.twitter)}></a>
             </p>
           </div>
-        </div>
-        <div className="flex items-end pb-2">
-
         </div>
       </div>
       <div className="mx-auto max-w-screen-lg my-10 md:my-20 grid grid-cols-12 bg-gray-100 py-20">
