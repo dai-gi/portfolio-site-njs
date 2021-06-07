@@ -1,6 +1,13 @@
 import Link from "next/link";
+import React, {useState} from "react";
 
 export default function Navigation() {
+
+    const [active, setActive] = useState(false);
+    const handleClick = () => {
+        setActive(!active);
+    };
+
     return (
         <header className="container mx-auto py-10 px-8 max-w-screen-lg text-gray-800">
             <div className="flex items-center justify-between">
@@ -14,7 +21,7 @@ export default function Navigation() {
                 </Link>
                 <div className="sm:hidden">
                     <div>
-                        <button type="button" className="inline-flex items-center justify-end p-2 rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <button type="button" className="inline-flex items-center justify-end p-2 rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500" aria-controls="mobile-menu" aria-expanded="false" onClick={handleClick}>
                             <span className="sr-only">Open main menu</span>
 
                             <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -28,31 +35,21 @@ export default function Navigation() {
                         </button>
                     </div>
                 </div>
-                <nav className="hidden sm:ml-auto sm:block">
+            </div>
+            <div className={`${active ? '' : 'hidden'} mt-10`} id="mobile-menu">
+                <div className="px-2 pt-2 pb-3 space-y-1">
                     <Link href="/">
-                        <a className="mr-10 font-light">Home</a>
+                        <a href="#" className="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
                     </Link>
                     <Link href="#about">
-                        <a className="mr-10 font-light">About</a>
+                        <a href="#" className="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
                     </Link>
                     <Link href="#work">
-                        <a className="mr-10 font-light">Work</a>
+                        <a href="#" className="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Work</a>
                     </Link>
                     <Link href="/">
-                        <a className="font-light">Contact</a>
+                        <a href="#" className="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
                     </Link>
-                </nav>
-            </div>
-            <div className="sm:hidden mt-10" id="mobile-menu">
-                <div className="px-2 pt-2 pb-3 space-y-1">
-
-                    <a href="#" className="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
-
-                    <a href="#" className="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-
-                    <a href="#" className="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Work</a>
-
-                    <a href="#" className="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
                 </div>
             </div>
         </header>
