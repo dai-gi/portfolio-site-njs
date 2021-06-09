@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Production({production}) {
     return (
         <Link href={`/productions/${production.id}`}>
-            <a className="max-w-sm overflow-hidden drop-shadow-md col-span-4 text-gray-800">
+            <a className="max-w-sm overflow-hidden drop-shadow-md text-gray-800 mt-8 col-span-12 md:mt-0 md:col-span-4">
                 <div className="flex justify-center">
                     <img className="w-64 border border-gray-300 rounded h-64" src={production.thumbnail} alt="Portfolio1" />
                 </div>
