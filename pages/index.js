@@ -47,7 +47,7 @@ export default function Home({ profiles, productions }) {
           </div>
         </div>
       </div>
-      <main className="mx-auto px-5 max-w-screen-lg my-20 grid grid-cols-12">
+      <main className="mx-auto px-5 max-w-screen-lg mt-20 grid grid-cols-12">
         <div className="flex items-center justify-center col-span-12">
           <h1 className="text-4xl font-thin text-gray-800 border-b border-gray-700 w-16 flex justify-center pb-3 mb-12 md:text-5xl" id="work">Work</h1>
         </div>
