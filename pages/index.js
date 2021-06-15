@@ -27,8 +27,8 @@ export default function Home({ profiles, productions }) {
           <h1 className="text-4xl font-thin text-gray-800 border-b border-gray-700 w-16 flex justify-center pb-3 mb-12 md:text-5xl" id="about">About</h1>
         </div>
         <div className="col-span-12 md:col-span-6 flex justify-center md:justify-end items-center md:mt-12">
-          <div className="md:bg-gray-300 md:h-56 md:w-56 md:relative md:right-24 md:top-5">
-            <img className="object-cover h-48 w-48 md:h-56 md:w-56 md:mr-14 md:absolute md:left-10 md:-top-10" src={profiles.map((profile) => profile.subimage)}/>
+          <div className="md:bg-gray-300 md:h-56 md:w-56 md:relative md:right-24 md:top-5 border border-gray-300">
+            <img className="object-cover h-40 w-40 md:h-56 md:w-56 md:mr-14 md:absolute md:left-10 md:-top-10" src={profiles.map((profile) => profile.subimage)}/>
           </div>
         </div>
         <div className="col-span-12 mt-10 flex justify-center text-gray-700 md:justify-start md:col-span-6 md:mt-6 md:ml-20">
