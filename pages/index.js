@@ -15,10 +15,8 @@ export default function Home({ profiles, productions }) {
         <div className="flex items-center justify-center">
           <div>
             <h1 className="text-6xl md:text-9xl text-gray-600 title">{profiles.map((profile) => profile.title)}</h1>
-            <p className="text-gray-400 md:text-xl">{profiles.map((profile) => profile.subtitle)}
-              <a className="fab fa-twitter md:text-2xl ml-7 mr-3" href={profiles.map((profile) => profile.twitter)}></a>
-              <a className="fab fa-github md:text-2xl" href={profiles.map((profile) => profile.twitter)}></a>
-            </p>
+            <a className="fab fa-twitter md:text-2xl ml-7 mr-3" href={profiles.map((profile) => profile.twitter)}></a>
+            <a className="fab fa-github md:text-2xl" href={profiles.map((profile) => profile.twitter)}></a>
           </div>
         </div>
       </div>
