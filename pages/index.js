@@ -13,11 +13,7 @@ export default function Home({ profiles, productions }) {
       </Head>
       <div className="pt-64 pb-96 mb-10 mt-1 md:py-48">
         <div className="flex items-center justify-center">
-          <div>
-            <h1 className="text-6xl md:text-9xl text-gray-600 title">{profiles.map((profile) => profile.title)}</h1>
-            <a className="fab fa-twitter md:text-2xl ml-7 mr-3" href={profiles.map((profile) => profile.twitter)}></a>
-            <a className="fab fa-github md:text-2xl" href={profiles.map((profile) => profile.twitter)}></a>
-          </div>
+          <h1 className="text-6xl md:text-9xl text-gray-600 title">{profiles.map((profile) => profile.title)}</h1>
         </div>
       </div>
       <div className="mx-auto max-w-screen-lg my-10 md:my-20 grid grid-cols-12 bg-gray-100 py-20">
