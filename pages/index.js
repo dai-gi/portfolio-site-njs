@@ -11,10 +11,8 @@ export default function Home({ profiles, productions }) {
       <Head>
         <title>DU Portfolio</title>
       </Head>
-      <div className="pt-64 pb-96 mb-10 mt-1 md:py-48">
-        <div className="flex items-center justify-center">
-          <h1 className="text-6xl md:text-9xl text-gray-600 title">{profiles.map((profile) => profile.title)}</h1>
-        </div>
+      <div className="flex items-center justify-center mt-64 mb-96">
+        <h1 className="text-6xl md:text-9xl text-gray-600 title">{profiles.map((profile) => profile.title)}</h1>
       </div>
       <div className="mx-auto max-w-screen-lg my-10 md:my-20 grid grid-cols-12 bg-gray-100 py-20">
         <div className="flex items-center justify-center col-span-12">
