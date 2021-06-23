@@ -9,7 +9,7 @@ export default function Navigation() {
     };
 
     return (
-        <header className="container mx-auto py-10 px-8 max-w-screen-lg text-gray-800">
+        <header className="container mx-auto my-7 max-w-screen-lg text-gray-800">
             <div className="flex items-center justify-between">
                 <Link href="/">
                     <a>
