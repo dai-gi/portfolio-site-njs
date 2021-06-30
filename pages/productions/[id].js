@@ -10,41 +10,32 @@ export default function ProductionData({ production }) {
 
     return (
         <div className="flex-grow text-gray-800">
-            <div className="h-28 flex items-center mx-auto max-w-screen-lg">
-                <h1 className="text-3xl font-thin">{production.title}</h1>
+            <div className="flex items-center max-w-screen-lg mx-auto my-7">
+                <h1 className="text-4xl font-thin">{production.title}</h1>
             </div>
-            <div className="h-96 w-full mx-auto max-w-screen-lg">
-                <img className="rouded object-cover h-full w-full" src={production.image} alt="Detail image"/>
-            </div>
-            <div className="grid grid-cols-12 mx-auto max-w-screen-lg mt-12 mb-40 h-72">
-                <div className="col-span-6 flex flex-col ml-28">
-                    <div className="font-normal">
-                        <i className="fas fa-code mb-3 text-sm"></i>
-                        <span className="ml-3">Skills&nbsp;:</span>
+            <img className="h-96 w-full max-w-screen-lg mx-auto mb-20 object-cover rounded" src={production.image} alt="Detail image"/>
+            <div className="grid grid-cols-12 h-72 max-w-screen-lg mx-auto mt-12 mb-40">
+                <div className="flex flex-col col-span-6 ml-40">
+                    <div className="flex items-center py-1">
+                        <span>Skills&nbsp;:</span>
                         <span className="ml-4">{production.skill}</span>
                     </div>
-                    <div className="font-normal">
-                        <i className="fab fa-github-square mb-3 text-sm"></i>
-                        <span className="ml-3">Github&nbsp;:</span>
+                    <div className="flex items-center py-1">
+                        <span>Github&nbsp;:</span>
                         <a className="ml-4" href={production.github}>https://github.com/dai-gi</a>
                     </div>
-                    <div className="font-normal">
-                        <i className="fas fa-window-maximize mb-3 text-sm"></i>
-                        <span className="ml-3">URL&nbsp;:</span>
+                    <div className="flex items-center py-1">
+                        <span>URL&nbsp;:</span>
                         <a className="ml-4" href={production.url}>https://github.com/dai-gi</a>
                     </div>
-                    <div className="font-normal">
-                        <i className="fas fa-calendar-day mb-3 text-sm"></i>
-                        <span className="ml-3">Created&nbsp;:</span>
+                    <div className="flex items-center py-1">
+                        <span>Created&nbsp;:</span>
                         <span className="ml-4">{production.created}</span>
                     </div>
                 </div>
                 <div className="col-span-6">
                     <p className="w-4/5">{production.description}</p>
                 </div>
-            </div>
-            <div className="flex items-center justify-center mt-24 mb-10">
-                <a className="far fa-arrow-alt-circle-up text-gray-300 text-3xl" href="/"></a>
             </div>
         </div>
     );
