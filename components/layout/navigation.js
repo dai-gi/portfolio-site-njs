@@ -9,7 +9,7 @@ export default function Navigation() {
     };
 
     return (
-        <div className="container max-w-screen-lg mx-auto my-7 text-gray-800">
+        <div className="container max-w-screen-lg mx-auto my-10 text-gray-800">
             <div className="flex items-center justify-between">
                 <Link href="/">
                     <a>
