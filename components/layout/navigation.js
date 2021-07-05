@@ -23,7 +23,7 @@ export default function Navigation() {
                     <Link href="/">
                         <a className="mr-10 font-light">Home</a>
                     </Link>
-                    <Link href="#work">
+                    <Link href="/work">
                         <a className="mr-10 font-light">Work</a>
                     </Link>
                     <Link href="/">
