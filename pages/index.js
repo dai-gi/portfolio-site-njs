@@ -5,7 +5,7 @@ import { getAllProductionsData } from "../lib/productions";
 
 export default function Home({ profiles, productions }) {
   return (
-    <div className="flex-grow">
+    <div>
       <Head>
         <title>DU Portfolio</title>
       </Head>

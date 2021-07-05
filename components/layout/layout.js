@@ -8,7 +8,9 @@ export default function Layout( props ) {
             <Navigation />
             <Sns />
             <body className="flex flex-col min-h-screen">
-                {props.children}
+                <div className="flex-grow">
+                    {props.children}
+                </div>
                 <div className="flex items-center justify-center">
                     <Link href="/" >
                         <a href="#" className="flex items-center justify-center h-20 w-20 my-10 text-gray-400 hover:text-gray-500 md:my-20">
