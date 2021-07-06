@@ -21,13 +21,13 @@ export default function Navigation() {
                 </Link>
                 <nav className="hidden md:block md:ml-auto">
                     <Link href="/">
-                        <a className="mr-10 font-light">Home</a>
+                        <a className="mr-10 font-light hover:opacity-60">Home</a>
                     </Link>
                     <Link href="/work">
-                        <a className="mr-10 font-light">Work</a>
+                        <a className="mr-10 font-light hover:opacity-60">Work</a>
                     </Link>
                     <Link href="/contact">
-                        <a className="font-light">Contact</a>
+                        <a className="font-light hover:opacity-60">Contact</a>
                     </Link>
                 </nav>
                 <div className="md:hidden">
