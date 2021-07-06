@@ -5,11 +5,11 @@ export default function List({production}) {
         <div className="mb-36">
             <a className="mt-8 text-gray-800" href={production.url}>
                 <div className="flex justify-center">
-                    <img className="w-full h-96 border border-gray-400 object-cover" src={production.thumbnail} alt="Portfolio" />
+                    <img className="w-full h-96 border border-gray-400 object-cover  hover:opacity-70" src={production.thumbnail} alt="Portfolio" />
                 </div>
             </a>
             <div className="mt-9">
-                <div className="flex items-center">
+                <div className="flex items-center hover:opacity-50">
                     <a className="flex items-center text-xl text-gray-800" href={production.url}>
                         {production.title}<span className="ml-3 text-xs fas fa-external-link-alt"></span>
                     </a>
