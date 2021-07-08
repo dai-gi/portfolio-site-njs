@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Layout( props ) {
     return (
-        <div className="relative flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen">
             <Navigation />
             <Sns />
             <body className="flex flex-col min-h-screen">
