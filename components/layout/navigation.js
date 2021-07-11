@@ -11,7 +11,7 @@ export default function Navigation() {
     return (
         <div>
             <div className={`${active ? 'hidden' : ''} container max-w-screen-lg mx-auto text-gray-800 xl:px-0 border-0`}>
-                <div className="flex items-center justify-between px-10 py-7">
+                <div className="flex items-center justify-between px-7 py-7">
                     <Link href="/">
                         <a className={`${active ? 'text-white' : ''}`}>
                             <svg className="h-12 w-12 xl:h-14 xl:w-14" width="47" height="40" viewBox="0 0 47 40" fill="none" xmlns="http://www.w3.org/2000/svg">
