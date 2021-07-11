@@ -33,13 +33,13 @@ export default function Navigation() {
                     </nav>
                     <div className="md:hidden">
                         <div>
-                            <button type="button" className={`${active ? 'text-white border-white hover:opacity-50' : 'text-gray-400 border-gray-400 hover:opacity-50'} inline-flex items-center justify-end p-2 border rounded-md focus:outline-none focus:ring-0`} onClick={handleClick}>
+                            <button type="button" className="text-gray-400 border-gray-400 hover:opacity-60 inline-flex items-center justify-end p-2 border rounded-md focus:outline-none focus:ring-0" onClick={handleClick}>
                                 {/* Humberger icon */}
-                                <svg className={`${active ? 'hidden' : 'block'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <svg className={`${active ? 'hidden transition duration-1000' : 'block'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                                 </svg>
                                 {/* X icon */}
-                                <svg className={`${active ? 'block' : 'hidden'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <svg className={`${active ? 'block transition duration-1000' : 'hidden'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
                             </button>
@@ -58,7 +58,7 @@ export default function Navigation() {
                         </a>
                     </Link>
                     <div>
-                        <button type="button" className={`${active ? 'text-white hover:text-gray-200 border-white hover:border-gray-200' : 'text-gray-400 hover:text-gray-500 border-gray-400 hover:border-gray-500'} inline-flex items-center justify-end p-2 border rounded-md focus:outline-none focus:ring-0`} onClick={handleClick}>
+                        <button type="button" className="text-white hover:text-gray-200 border-white hover:border-gray-200 inline-flex items-center justify-end p-2 border rounded-md focus:outline-none focus:ring-0" onClick={handleClick}>
                             {/* Humberger icon */}
                             <svg className={`${active ? 'hidden' : 'block'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
