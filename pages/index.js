@@ -16,15 +16,15 @@ export default function Home({ profiles, productions }) {
         <div className="flex items-center justify-center">
           <h1 className="flex justify-center w-16 pb-3 text-4xl text-gray-800 font-thin border-b border-gray-700 md:text-5xl" id="work">Work</h1>
         </div>
-        <div className="grid grid-cols-12 px-5 mt-20 mx-auto max-w-screen-lg">
+        <div className="grid grid-cols-12 px-5 mt-9 mx-auto max-w-screen-lg md:mt-20">
           {productions && productions.map((production) => <Production key={production.id} production={production} />)}
         </div>
-        <div className="flex justify-center mt-52 mb-20">
-          <div className="float-left w-32 h-32">
-            <img className="w-32 h-32 object-cover border border-gray-300" src={profiles.map((profile) => profile.subimage)}/>
+        <div className="flex justify-center mt-44 mb-20">
+          <div className="float-left w-28 h-28 md:w-32 md:h-32">
+            <img className="w-28 h-28 md:w-32 md:h-32 object-cover border border-gray-300" src={profiles.map((profile) => profile.subimage)}/>
           </div>
-          <div className="flex items-center ml-10 text-gray-700">
-            <p>{profiles.map((profile) => profile.name)}</p>
+          <div className="flex items-center ml-6 md:ml-10 text-gray-700">
+            <p className="text-sm md:text-base">{profiles.map((profile) => profile.name)}</p>
           </div>
         </div>
       </main>
